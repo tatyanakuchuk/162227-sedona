@@ -1,7 +1,7 @@
-# Личный проект «Седона»
+﻿# Личный проект «Седона»
 
 * Студент: [Tetiana Kuchuk](https://up.htmlacademy.ru/htmlcss/14/user/162227).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлия Антонова](https://up.htmlacademy.ru/htmlcss/14/user/39082).
 
 ---
 
