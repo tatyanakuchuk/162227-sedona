@@ -10,7 +10,7 @@
 												<!-- HEADER -->
 		<header class="main_header">
 			<img src="img/logo.png" alt="Sedona" class="logo_pic" width="140" height="70">
-			<nav class="main_navigation">
+			<nav class="main_navigation clearfix">
 				<ul>
 					<li>
 						<a href="#">Информация</a> 
@@ -30,13 +30,17 @@
 		<main class="content">
 												<!-- ВСТУПЛЕНИЕ -->
 			<section class="intro">
-				<img src="img/intro-text.png" alt="Sedona" class="city_welcome" width="438" height="352">	
+				<div class="intro_text">
+					<img src="img/intro-text.png" alt="Sedona" class="city_welcome" width="438" height="352">
+				</div>		
 			</section>
 												<!-- ПРЕИМУЩЕСТВА -->
 			<section class="benefits">
-				<p class="sedona_city">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-				<p class="sedona_cool">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-				<div class="benefit_row">
+				<div class="container">
+					<p class="sedona_city">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+					<p class="sedona_cool">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+				</div>
+				<div class="benefit_first clearfix">
 					<div class="benefit">
 						<h3>Настоящий городок</h3>
 						<span>№1</span>
@@ -44,7 +48,7 @@
 					</div>
 					<img src="img/benefit1.jpg" class="benefit_img" width="800" height="256" alt="Городок Седона">
 				</div>
-				<div class="offers">
+				<div class="offers clearfix">
 					<div class="offer">
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле. Все как в кино!</p>
@@ -58,7 +62,7 @@
 						<p>Не только китайского, но и местного производства!</p>
 					</div>
 				</div>
-				<div class="benefit_row">
+				<div class="benefit_second clearfix">
 					<div class="benefit">
 						<h3>Там есть мост дьявола</h3>
 						<span>№2</span>
@@ -66,7 +70,7 @@
 					</div>
 					<img src="img/benefit2.jpg" class="benefit_img" width="800" height="256" alt="Мост дьявола">
 				</div>
-				<div class="advantages">
+				<div class="advantages clearfix">
 					<div class="advantage">
 						<h3>Небольшая площадь</h3>
 						<span>№3</span>
@@ -86,10 +90,12 @@
 			</section>
 												<!-- ПОИСК ОТЕЛЯ -->
 			<section class="search_hotel">
-				<h2>Заинтересовались?</h2>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<div class="search">
-					<a href="#" class="search_btn">Поиск гостиницы в Седоне</a>
+				<div class="container">
+					<h2>Заинтересовались?</h2>
+					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				</div>	
+				<div class="search">				
+					<a href="#" class="search_btn">Поиск гостиницы в Седоне</a>	
 					<div class="search_form">
 						<form action="#" method="post">
 							<div class="date_picker">
@@ -135,7 +141,7 @@
 			</section>
 		</main>
 													<!-- FOOTER -->
-		<footer>
+		<footer class="clearfix">
 			<div class="footer_visitsedona">
 				<a class="visitsedona" href="#">#VISITSEDONA</a>
 			</div>
