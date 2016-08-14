@@ -3,7 +3,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	min-height: 2762px;
+	min-width: 1200px;
 }
 
 body {
@@ -26,11 +26,24 @@ h3 {
 	color: #000;
 }
 
+img {
+	border: 0;
+}
+
+p {
+	margin: 0;
+}
+
 					/*     СЕТКА     */
 
 .wrapper {
 	width: 1200px;
 	margin: 0 auto;
+	background: #fff;
+	outline: 1px solid blue;
+}
+
+.header {
 	position: relative;
 	outline: 1px solid blue;
 }
@@ -38,11 +51,8 @@ h3 {
 .logo_pic {
 	display: block;
 	position: absolute;
-	left: 530px;
-}
-
-nav {
-	outline: 1px solid blue;
+	left: 50%;
+	margin-left: -70px;
 }
 
 .main_navigation ul {
@@ -52,8 +62,9 @@ nav {
 
 .main_navigation li {
 	float: left;
-	min-height: 56px;
 	width: 240px;
+	padding-bottom: 23px;
+	padding-top: 7px;
 	outline: 1px solid blue;
 }
 
@@ -65,10 +76,7 @@ nav {
 	margin-right: 96px;
 }
 
-.main_navigation li:nth-child(3) {
-	text-align: right;
-}
-
+.main_navigation li:nth-child(3),
 .main_navigation li:last-child {
 	text-align: right;
 }
@@ -76,87 +84,98 @@ nav {
 .intro {
 	height: 432px;
 	padding-top: 76px;
+	background-image: url(../img/intro-bg.jpg);
 	outline: 1px solid blue;
 }
 
 .intro_text {
 	width: 438px;
-	height: 352px;
 	margin: 0 auto;
 	outline: 1px solid blue;
 }
 
 .container {
 	width: 500px;
-	min-height: 160px;
 	margin: 0 auto;
-	margin-bottom: 55px;
+	padding-bottom: 58px;
+	padding-top: 54px;
 	outline: 1px solid blue;
 }
 
-.benefit_first {
-	margin-bottom: 60px;
+.benefit_block {
 	outline: 1px solid blue;
 } 
 
 .benefit {
 	width: 400px;
-	min-height: 256px;
+	padding-top: 46px;
+	padding-bottom: 58px;
 	float: left;
+}
+
+.benefit.right {
+	float: right;
 }
 
 .benefit_img {
 	float: right;
 }
 
+.benefit_img.left {
+	float: left;
+}
+
 .offer {
 	float: left;
 	width: 400px;
-	min-height: 185px;
+	padding-top: 156px;
+	padding-bottom: 82px;
 	outline: 1px solid blue;
-}
-
-.offers {
-	margin-bottom: 85px;
-}
-
-.benefit_second {
-	margin-bottom: 45px;
-	outline: 1px solid blue;
-}
-
-.benefit_second .benefit {
-	float: right;
-}
-
-.benefit_second .benefit_img {
-	float: left;
 }
 
 .advantage {
 	float: left;
 	width: 400px;
-	min-height: 150px;
+	padding-top: 46px;
+	padding-bottom: 58px;
 	outline: 1px solid blue;
 }
 						/*	ФОРМА ПОИСКА	*/
 
-.search {
-	width: 570px;
-	margin: 0 auto;
-	outline: 1px solid blue;
+.search_hotel {
+	position: relative;
 }
-.search_form {
+
+.search_hotel .container {
+	padding-top: 46px;
+	padding-bottom: 140px;
+}
+
+.search {
+	position: absolute;
 	width: 570px;
-	height: 395px;
+	left: 50%;
+	margin-left: -285px;
 	outline: 1px solid blue;
+	bottom: 0;
 }
 
 .search_btn {
-	padding-top: 24px;
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 25px;
 	padding-bottom: 35px;
-	padding-left: 140px;
-	padding-right: 140px;
+	padding-left: 50px;
+	padding-right: 50px;
+	outline: 1px solid blue;
+}
+
+.search_form {
+	position: absolute;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 55px;
 	outline: 1px solid blue;
 }
 
@@ -172,23 +191,38 @@ nav {
 .footer_social,
 .footer_copyright {
 	width: 400px;
-	height: 120px;
 	float: left;
+	padding-top: 45px;
+	padding-bottom: 50px;
 	outline: 1px solid blue;
+	text-align: center;
 }
 
+.footer_copyright {
+	padding-top: 39px;
+	padding-bottom: 30px;
+	font-size: 0;
+}
+
+.footer_copyright p{
+	display: inline-block;
+	font-size: 16px;
+}
+
+.img_link {
+	display: inline-block;
+	vertical-align: middle;
+}
 
 				/*  INNER PAGE*/
 
 .filters {
-	height: 217px;
 	margin-bottom: 25px;
 	outline: 1px solid red;
 }
 
 .filter {
 	width: 240px;
-	height: 217px;
 	float: left;
 	outline: 1px solid red;
 }
@@ -199,7 +233,6 @@ nav {
 
 .filter_price {
 	width: 300px;
-	height: 217px;
 	float: right;
 	margin-right: 70px;
 	outline: 1px solid red;
