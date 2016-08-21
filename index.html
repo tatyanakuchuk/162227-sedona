@@ -3,17 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sedona</title>
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
 												<!-- HEADER -->
 		<header class="main_header">
 			<img src="img/logo.png" alt="Sedona" class="logo_pic" width="140" height="70">
-			<nav class="main_navigation clearfix">
+			<nav class="main_navigation">
 				<ul class="clearfix">
 					<li>
-						<a href="#">Информация</a> 
+						<a class="active" href="#">Информация</a> 
 					</li>
 					<li>
 						<a href="#">Фото и видео</a>
@@ -41,12 +43,12 @@
 					<p class="sedona_cool">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 				</div>
 				<div class="benefit_block clearfix">
-					<div class="benefit">
-						<h3>Настоящий городок</h3>
+					<div class="benefit left">
+						<h3>Настоящий<br>городок</h3>
 						<span>№1</span>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
-					<img src="img/benefit1.jpg" class="benefit_img" width="800" height="256" alt="Городок Седона">
+					<img src="img/benefit1.jpg" class="benefit_img right" width="800" height="256" alt="Городок Седона">
 				</div>
 				<div class="offers clearfix">
 					<div class="offer">
@@ -64,7 +66,7 @@
 				</div>
 				<div class="benefit_block clearfix">
 					<div class="benefit right">
-						<h3>Там есть мост дьявола</h3>
+						<h3>Там есть <br>мост дьявола</h3>
 						<span>№2</span>
 						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
@@ -72,17 +74,17 @@
 				</div>
 				<div class="advantages clearfix">
 					<div class="advantage">
-						<h3>Небольшая площадь</h3>
+						<h3>Небольшая <br>площадь</h3>
 						<span>№3</span>
 						<p>Все достопримечательности находятся очень близко</p>
 					</div>
 					<div class="advantage">
-						<h3>Красивая дорога</h3>
+						<h3>Красивая <br>дорога</h3>
 						<span>№4</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 					</div>
 					<div class="advantage">
-						<h3>Мало туристов</h3>
+						<h3>Мало <br>туристов</h3>
 						<span>№5</span>
 						<p>Большинство едет в Гранд Каньон и толпится там</p>
 					</div>
@@ -92,7 +94,7 @@
 			<section class="search_hotel">
 				<div class="container">
 					<h2>Заинтересовались?</h2>
-					<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<p class="search_text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				</div>	
 				<div class="search">				
 					<a href="#" class="search_btn">Поиск гостиницы в Седоне</a>	
@@ -100,32 +102,32 @@
 						<form action="#" method="post">
 							<div class="date_picker">
 								<label for="arrival">Дата заезда:</label>
-								<div class="arrival_date">
-									<input type="text" id="arrival">
-									<button type="button">Кнопка-календарь</button>
+								<div class="field_date">
+									<input type="text" id="arrival" class="date_input" value="24 апреля 2016">
+									<button type="button" class="calendar_btn">Кнопка-календарь</button>
 								</div>
 							</div>
 							<div class="date_picker">
 								<label for="departure">Дата выезда:</label>
-								<div class="departure_date">
-									<input type="text" id="departure">
-									<button type="button">Кнопка-календарь</button>
+								<div class="field_date">
+									<input type="text" id="departure" class="date_input" value="4 июля 2016">
+									<button type="button" class="calendar_btn">Кнопка-календарь</button>
 								</div>
 							</div>
 							<div class="count_part">
 								<div class="count">
 									<label for="adults">Взрослые:</label>
-									<div class="count_adults">
+									<div class="count_field">
 										<button type="button" value="-">-</button>
-										<input type="text" id="adults">
+										<input type="text" id="adults" value="2">
 										<button type="button" value="+">+</button>
 									</div>	
 								</div>
 								<div class="count">
 									<label for="children">Дети:</label>
-									<div class="count_children">
+									<div class="count_field">
 										<button type="button" value="-">-</button>
-										<input type="text" id="children">
+										<input type="text" id="children" value="0">
 										<button type="button" value="+">+</button>
 									</div>
 								</div>
@@ -152,9 +154,7 @@
 			</div>
 			<div class="footer_copyright">
 				<p>Website by</p>
-				<a class="img_link" href="https://htmlacademy.ru">
-					<img src="img/academy.png" alt="HTML Academy"> 
-				</a>
+				<a class="img_link" href="https://htmlacademy.ru">HTML Academy</a>
 			</div>
 		</footer>
 	</div>

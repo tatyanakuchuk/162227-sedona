@@ -4,6 +4,7 @@ body {
 	margin: 0;
 	padding: 0;
 	min-width: 1200px;
+	background: #f2f2f2;
 }
 
 body {
@@ -27,6 +28,7 @@ h3 {
 }
 
 img {
+	display: block;
 	border: 0;
 }
 
@@ -40,12 +42,11 @@ p {
 	width: 1200px;
 	margin: 0 auto;
 	background: #fff;
-	outline: 1px solid blue;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
 }
 
 .header {
 	position: relative;
-	outline: 1px solid blue;
 }
 
 .logo_pic {
@@ -58,14 +59,41 @@ p {
 .main_navigation ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+
+.main_navigation ul a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000;
+}
+				/*	СОСТОЯНИЯ ПУНКТОВ ГЛАВНОГО МЕНЮ	*/
+.main_navigation ul a:hover {
+	color: #81b3d2;
+}
+
+.main_navigation ul a:active {
+	color: #b2b2b2;
+}
+
+.main_navigation ul a.active {
+	color: #766357;
+}
+
+.main_navigation ul a.active:hover {
+	color: #604e43;
+}
+
+.main_navigation ul a.active:active {
+	color: #d6d0cc;
 }
 
 .main_navigation li {
 	float: left;
 	width: 240px;
-	padding-bottom: 23px;
-	padding-top: 7px;
-	outline: 1px solid blue;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .main_navigation li:first-child {
@@ -84,32 +112,55 @@ p {
 .intro {
 	height: 432px;
 	padding-top: 76px;
-	background-image: url(../img/intro-bg.jpg);
-	outline: 1px solid blue;
+	background: url(../img/intro-mask.png) no-repeat 0 bottom,
+				url(../img/intro-bg.jpg);
 }
 
 .intro_text {
 	width: 438px;
 	margin: 0 auto;
-	outline: 1px solid blue;
 }
 
 .container {
 	width: 500px;
 	margin: 0 auto;
-	padding-bottom: 58px;
-	padding-top: 54px;
-	outline: 1px solid blue;
+	padding-top: 55px;
+	padding-bottom: 50px;
 }
 
-.benefit_block {
-	outline: 1px solid blue;
+.sedona_city {
+	font-size: 21px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sedona_cool {
+	text-align: center;
+	text-transform: uppercase;
 } 
 
-.benefit {
+.benefit,
+.advantage {
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	width: 400px;
-	padding-top: 46px;
-	padding-bottom: 58px;
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.benefit {
+	padding: 52px 70px;
+	padding-bottom: 57px;
+	background: #81b3d2;
+}
+
+.benefit.left {
 	float: left;
 }
 
@@ -117,7 +168,7 @@ p {
 	float: right;
 }
 
-.benefit_img {
+.benefit_img.right {
 	float: right;
 }
 
@@ -125,20 +176,102 @@ p {
 	float: left;
 }
 
+h3 {
+	font-weight: 700;
+	margin: 0;
+	margin-bottom: 18px;
+	color: #fff;
+}
+
+.advantage h3,
+.offer h3 {
+	color: #000;
+}
+
+.benefit p,
+.advantage p,
+.offer p {
+	line-height: 21px;
+}
+
+.benefit span,
+.advantage span {
+	display: block;
+	position: relative;
+	line-height: 21px;
+	margin-bottom: 18px;
+}
+
+.benefit span::before,
+.advantage span::before,
+.benefit span::after,
+.advantage span::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 9px;
+	height: 2px;
+	background: #fff;
+	top: 10px;
+	opacity: 0.5;
+}
+
+.benefit span::before {
+	background: #fff;
+	left: 105px;
+}
+
+.benefit span::after {
+	background: #fff;
+	right: 105px;
+}
+
+.advantage span::before {
+	background: #000;
+	left: 115px;
+}
+
+.advantage span::after {
+	background: #000;
+	right: 115px;
+}
+
+
+
+
 .offer {
 	float: left;
 	width: 400px;
+	padding: 0 55px;
 	padding-top: 156px;
-	padding-bottom: 82px;
-	outline: 1px solid blue;
+	padding-bottom: 80px;
+	text-align: center;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.offer:first-child {
+	background: url(../img/house.png) no-repeat 50% 60px;
+}
+
+.offer:nth-child(2) {
+	background: url(../img/food.png) no-repeat 50% 60px;
+}
+
+.offer:last-child {
+	background: url(../img/souvenir.png) no-repeat 50% 60px;
 }
 
 .advantage {
 	float: left;
 	width: 400px;
-	padding-top: 46px;
+	padding-top: 50px;
 	padding-bottom: 58px;
-	outline: 1px solid blue;
+	background: #eeeeee;
+	color: #000;
+	padding: 53px 60px;
 }
 						/*	ФОРМА ПОИСКА	*/
 
@@ -147,8 +280,23 @@ p {
 }
 
 .search_hotel .container {
-	padding-top: 46px;
-	padding-bottom: 140px;
+	padding-top: 55px;
+	padding-bottom: 85px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 22px;
+}
+
+p.search_text {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 45px;
 }
 
 .search {
@@ -156,7 +304,6 @@ p {
 	width: 570px;
 	left: 50%;
 	margin-left: -285px;
-	outline: 1px solid blue;
 	bottom: 0;
 }
 
@@ -164,11 +311,15 @@ p {
 	display: block;
 	width: 100%;
 	box-sizing: border-box;
-	padding-top: 25px;
-	padding-bottom: 35px;
-	padding-left: 50px;
-	padding-right: 50px;
-	outline: 1px solid blue;
+	padding: 30px 50px;
+	text-transform: uppercase;
+	background: #766357;
+	text-decoration: none;
+	color: #fff;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-align: center;
 }
 
 .search_form {
@@ -176,13 +327,173 @@ p {
 	width: 100%;
 	box-sizing: border-box;
 	padding: 55px;
-	outline: 1px solid blue;
+	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	text-transform: uppercase;
+	color: #000;
+}
+
+.date_picker {
+	margin-bottom: 30px;
+	font-size: 0;
+}
+
+label {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	padding: 6px 0;
+	text-transform: uppercase;
+	vertical-align: middle;
+	width: 25%;
+}
+
+.field_date {
+	display: inline-block;
+	position: relative;
+	width: 75%;
+	vertical-align: bottom;
+}
+
+input[type="text"] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+button[type="button"] {
+	cursor: pointer;
+}
+
+.date_input {
+	border: none;
+	outline: none;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 38px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	background: #f2f2f2;
+}
+
+.date_input:hover {
+	background: #ebebeb;
+}
+
+.date_input:active {
+	background: #fff;
+	outline: 2px solid #e5e5e5;
+}
+
+.calendar_btn {
+	display: block;
+	position: absolute;
+	width: 36px;
+	height: 38px;
+	font-size: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
+	background-position: 7px 7px; 
+	top: 0px;
+	left: 310px;
+}
+
+.calendar_btn:hover {
+	background-position: 7px -31px;
+}
+
+.calendar_btn:active {
+	background-position: 7px -69px;
+}
+
+.count_part {
+	font-size: 0;
+	margin-bottom: 55px;
+}
+
+.count {
+	display: inline-block;
+	width: 50%;
+	font-size: 0;
+}
+
+.count label {
+	width: 50%;
+}
+
+.count:last-child label {
+	width: 30%;
+	margin-left: 20%;
+}
+
+.count_field {
+	display: inline-block;
+	width: 50%;
+	font-size: 0;
+}
+
+.count_field button[type="button"],
+.count_field input[type="text"] {
+	display: inline-block;
+	width: 38px;
+	padding: 6px 15px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	background: #f2f2f2;
+	color: #a9a9a9;
+}
+
+.count_field input[type="text"] {
+	color: #000;
+}
+
+.count_field button[type="button"]:hover {
+	color: #000;
+}
+
+.count_field button[type="button"]:active {
+	color: #81b3d2;
+}
+
+input[type="submit"] {
+	display: block;
+	width: 100%;
+	padding: 15px 5px;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	background: #81b3d2;
+	color: #fff;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background: #669ec0;
+}
+
+input[type="submit"]:active {
+	background: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .map {
 	width: 1200px;
 	height: 473px;
-	outline: 1px solid blue;
 }
 
 						/*	ФУТЕР	*/
@@ -192,27 +503,105 @@ p {
 .footer_copyright {
 	width: 400px;
 	float: left;
-	padding-top: 45px;
-	padding-bottom: 50px;
-	outline: 1px solid blue;
 	text-align: center;
 }
 
-.footer_copyright {
-	padding-top: 39px;
-	padding-bottom: 30px;
+.footer_visitsedona {
+	padding-top: 48px;
+	padding-bottom: 44px;
+}
+
+.visitsedona {
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+	text-decoration: none;
+	color: #000;
+}
+
+.footer_social {
 	font-size: 0;
+	padding-top: 36px;
+	padding-bottom: 36px;
+}
+
+.social_btn {
+	display: inline-block;
+	width: 46px;
+	height: 48px;
+	margin-right: 6px;
+	background-color: #81b3d2;
+	background-repeat: no-repeat;
+}
+
+.social_btn:hover {
+	background-color: #669ec0;
+}
+
+.social_btn:active {
+	background-color: #5496bd;
+}
+
+.social_btn_tw {
+	background-image: url(../img/sprite.png);
+	background-position: -161px 18px;
+}
+
+.social_btn_tw:active {
+	background-position: -208px 18px;
+}
+
+.social_btn_fb {
+	background-image: url(../img/sprite.png);
+	background-position: -162px -33px;
+}
+
+.social_btn_fb:active {
+	background-position: -210px -33px;
+}
+
+.social_btn_ytb {
+	background-image: url(../img/sprite.png);
+	background-position: -162px -95px;
+}
+
+.social_btn_ytb:active {
+	background-position: -206px -95px;
+}
+
+.footer_copyright {
+	font-size: 0;
+	padding-top: 41px;
+	padding-bottom: 40px;
 }
 
 .footer_copyright p{
 	display: inline-block;
-	font-size: 16px;
+	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	vertical-align: middle;
 }
 
 .img_link {
 	display: inline-block;
+	width: 113px;
+	height: 39px;
+	background-image: url(../img/sprite.png);
+	background-position: -24px 0;
+	margin: 0;
+	margin-left: 8px;
 	vertical-align: middle;
 }
+
+.img_link:hover {
+	background-position: -24px -48px;
+}
+.img_link:active {
+	background-position: -24px -95px;
+}
+
 
 				/*  INNER PAGE*/
 
@@ -269,6 +658,7 @@ p {
 }
 
 					/*	СПИСОК НАЙДЕННЫХ ОТЕЛИ	*/
+
 .hotel_found {
 	padding-top: 30px;
 	padding-bottom: 30px;
