@@ -15,7 +15,7 @@
 			<nav class="main_navigation">
 				<ul class="clearfix">
 					<li>
-						<a class="active" href="#">Информация</a> 
+						<a href="#">Информация</a> 
 					</li>
 					<li>
 						<a href="#">Фото и видео</a>
@@ -44,11 +44,13 @@
 				</div>
 				<div class="benefit_block clearfix">
 					<div class="benefit left">
-						<h3>Настоящий<br>городок</h3>
+						<h3>Настоящий городок</h3>
 						<span>№1</span>
 						<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
-					<img src="img/benefit1.jpg" class="benefit_img right" width="800" height="256" alt="Городок Седона">
+					<div class="benefit_img right">
+						<img src="img/benefit1.jpg" width="800" height="256" alt="Городок Седона">
+					</div>	
 				</div>
 				<div class="offers clearfix">
 					<div class="offer">
@@ -66,25 +68,27 @@
 				</div>
 				<div class="benefit_block clearfix">
 					<div class="benefit right">
-						<h3>Там есть <br>мост дьявола</h3>
+						<h3>Там есть мост дьявола</h3>
 						<span>№2</span>
 						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
-					<img src="img/benefit2.jpg" class="benefit_img left" width="800" height="256" alt="Мост дьявола">
+					<div class="benefit_img left">
+						<img src="img/benefit2.jpg" width="800" height="256" alt="Мост дьявола">
+					</div>	
 				</div>
 				<div class="advantages clearfix">
 					<div class="advantage">
-						<h3>Небольшая <br>площадь</h3>
+						<h3>Небольшая площадь</h3>
 						<span>№3</span>
 						<p>Все достопримечательности находятся очень близко</p>
 					</div>
 					<div class="advantage">
-						<h3>Красивая <br>дорога</h3>
+						<h3>Красивая дорога</h3>
 						<span>№4</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 					</div>
 					<div class="advantage">
-						<h3>Мало <br>туристов</h3>
+						<h3>Мало туристов</h3>
 						<span>№5</span>
 						<p>Большинство едет в Гранд Каньон и толпится там</p>
 					</div>
@@ -118,17 +122,17 @@
 								<div class="count">
 									<label for="adults">Взрослые:</label>
 									<div class="count_field">
-										<button type="button" value="-">-</button>
-										<input type="text" id="adults" value="2">
-										<button type="button" value="+">+</button>
+										<button type="button" value="-" class="btn btn_reduce">-</button>
+										<input type="text" id="adults" value="2" class="count_input">
+										<button type="button" value="+" class="btn btn_add">+</button>
 									</div>	
 								</div>
 								<div class="count">
 									<label for="children">Дети:</label>
 									<div class="count_field">
-										<button type="button" value="-">-</button>
-										<input type="text" id="children" value="0">
-										<button type="button" value="+">+</button>
+										<button type="button" value="-" class="btn btn_reduce">-</button>
+										<input type="text" id="children" value="0" class="count_input">
+										<button type="button" value="+" class="btn btn_add">+</button>
 									</div>
 								</div>
 							</div>
@@ -139,11 +143,11 @@
 			</section>
 													<!-- КАРТА -->
 			<section class="map">
-				<img src="img/map.jpg" alt="Карта проезда в Седону" class="map_sedona" width="1200" height="473">
+				<img src="img/map.jpg" alt="Карта проезда в Седону" class="map_sedona" width="1200" height="593">
 			</section>
 		</main>
 													<!-- FOOTER -->
-		<footer class="clearfix">
+		<footer class="main_footer clearfix">
 			<div class="footer_visitsedona">
 				<a class="visitsedona" href="#">#VISITSEDONA</a>
 			</div>
