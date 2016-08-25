@@ -196,9 +196,9 @@ p {
 	left: 0;
 }
 
-.benefit_img img {
+.benefit img {
 	display: block;
-	width: 100%;
+	width: auto;
 	height: 100%;
 }
 
@@ -480,31 +480,43 @@ button[type="button"] {
 	font-size: 0;
 	border: none;
 	outline: none;
-	background: transparent url(../img/sprite.png) no-repeat -155px -129px;
+	background-color: transparent;
+	background-image: url(../img/sprite.png);
+	background-repeat: no-repeat;
 	color: #a9a9a9;
 }
 
 .btn_reduce {
 	left: 0;
+	background-position: -155px -129px;
 }
 
 .btn_add {
 	right: 0;
+	background-position: -155px -156px;
 }
 
-.count_field .btn:hover {
+.btn_reduce:hover {
 	background-position: -215px -129px;
 }
 
-.count_field .btn:active {
+.btn_reduce:active {
 	background-position: -275px -129px;
+}
+
+.btn_add:hover {
+	background-position: -215px -156px;
+}
+
+.btn_add:active {
+	background-position: -275px -156px;
 }
 
 .count_input {
 	display: inline-block;
 	width: 114px;
 	height: 38px;
-	padding: 6px 53px;
+	padding: 6px 38px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
@@ -512,6 +524,7 @@ button[type="button"] {
 	outline: none;
 	background: #f2f2f2;
 	color: #000;
+	text-align: center;
 }
 
 .count_input:hover {
@@ -523,7 +536,7 @@ button[type="button"] {
 	outline: 2px solid #e5e5e5;
 }
 
-input[type="submit"] {
+.search_btn_form {
 	display: block;
 	width: 100%;
 	padding: 15px 5px;
@@ -538,11 +551,11 @@ input[type="submit"] {
 	cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.search_btn_form:hover {
 	background: #669ec0;
 }
 
-input[type="submit"]:active {
+.search_btn_form:active {
 	background: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -675,7 +688,6 @@ input[type="submit"]:active {
 
 .filters {
 	padding-top: 25px;
-	margin-bottom: 40px;
 	background: url(../img/bg-inner.jpg);
 }
 
@@ -689,13 +701,17 @@ input[type="submit"]:active {
 	margin-left: 70px;
 }
 
-p.filter_name {
-	margin-bottom: 25px;
+.filter_name {
+	margin-bottom: 20px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #fff;
+}
+
+.filter_price .filter_name {
+	margin-bottom: 15px;
 }
 
 input[type="checkbox"] {
@@ -728,9 +744,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .filter label {
-	margin-bottom: 25px;
+	display: block;
+	margin-bottom: 20px;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 400;
 	text-transform: uppercase;
 	color: #fff;
 	margin-left: 42px;
@@ -758,6 +776,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	color: #fff;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: 400;
 	padding: 0;
 }
 .price_area input{
@@ -792,7 +811,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	top: 2px;
 }
 
-input[type="submit"].filter_btn {
+.filter_btn {
 	display: block;
 	padding: 5px;
 	box-sizing: border-box;
@@ -801,10 +820,15 @@ input[type="submit"].filter_btn {
 	border-radius: 2px;
 	width: 40%;
 	font-size: 14px;
+	line-height: 21px;
+	font-weight: 400;
+	font-family: "PT Sans", Arial, sans-serif;
 	margin: 0 auto;
+	color: #fff;
+	text-transform: uppercase;
 }
 
-input[type="submit"].filter_btn:hover {
+.filter_btn:hover {
 	background-color: #fff;
 	color: #000;
 }
@@ -870,6 +894,7 @@ input[type="submit"].filter_btn:hover {
 						/*	СОРТИРОВКА	*/
 
 .hotels_sorting {
+	padding-top: 40px;
 	vertical-align: bottom;
 	margin-bottom: 30px;
 }
@@ -895,7 +920,7 @@ input[type="submit"].filter_btn:hover {
 	float: left;
 	margin-right: 30px;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 26px;
 	text-transform: uppercase;
 }
 
@@ -909,7 +934,7 @@ input[type="submit"].filter_btn:hover {
 	width: 90px;
 	float: left;
 	font-size: 12px;
-	line-height: 18px;
+	line-height: 26px;
 	text-transform: uppercase;
 }
 
@@ -917,6 +942,7 @@ input[type="submit"].filter_btn:hover {
 	color: #b2b2b2;
 	text-decoration: none;
 	border-bottom: 1px dotted #81b3d2;
+	vertical-align: bottom;
 }
 
 .sorting_list a:hover {
@@ -937,7 +963,6 @@ input[type="submit"].filter_btn:hover {
 	float: right;
 	width: 100px;
 	margin-right: 70px;
-
 	font-size: 0;
 	text-align: right;
 }
@@ -945,7 +970,7 @@ input[type="submit"].filter_btn:hover {
 .sorting_up,
 .sorting_down {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 	width: 12px;
 	height: 10px;
 	background-image: url(../img/sprite.png);
@@ -998,6 +1023,7 @@ input[type="submit"].filter_btn:hover {
 }
 
 .info {
+	min-width: 750px;
 	float: left;
 	font-size: 14px;
 	line-height: 21px;
@@ -1094,18 +1120,12 @@ input[type="submit"].filter_btn:hover {
 	display: inline-block;
 	width: 18px;
 	height: 18px;
-	margin-right: 6px;
-}
-
-.star:last-child {
-	margin-right: 0;
-}
-
-.star_add {
+	margin-left: 6px;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
 	background-position: -250px -231px;
 }
+
 .rating {
 	display: inline-block;
 	padding: 3px 10px;
