@@ -184,8 +184,9 @@ p {
 .benefit_img {
 	position: absolute;
 	top: 0;
-	min-width: 67%;
+	width: 67%;
 	height: 100%;
+	display: block;
 }
 
 .benefit_img.right {
@@ -194,12 +195,6 @@ p {
 
 .benefit_img.left {
 	left: 0;
-}
-
-.benefit img {
-	display: block;
-	width: auto;
-	height: 100%;
 }
 
 .advantage h3,
