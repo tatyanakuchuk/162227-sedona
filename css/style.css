@@ -23,12 +23,12 @@ h2 {
 
 h3 {
 	font-size: 21px;
-	line-height: 26px;
+	line-height: 24px;
 	color: #000;
 	max-width: 160px;
 	font-weight: 700;
 	margin: 0 auto;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	color: #fff;
 }
 
@@ -115,6 +115,8 @@ p {
 	text-align: right;
 }
 
+						/*	ВСТУПЛЕНИЕ	*/
+
 .intro {
 	height: 432px;
 	padding-top: 76px;
@@ -131,7 +133,7 @@ p {
 .container {
 	width: 500px;
 	margin: 0 auto;
-	padding-top: 55px;
+	padding-top: 57px;
 	padding-bottom: 50px;
 }
 
@@ -168,7 +170,7 @@ p {
 	position: relative;
 	width: 33%;
 	min-height: 256px;
-	padding: 53px 70px;
+	padding: 53px 60px;
 	background-color: #81b3d2;
 	z-index: 1;
 }
@@ -182,11 +184,13 @@ p {
 }
 
 .benefit_img {
+	display: block;
 	position: absolute;
 	top: 0;
-	width: 67%;
+	width: auto;
+	min-width: 67%;
 	height: 100%;
-	display: block;
+	min-height: 256px;
 }
 
 .benefit_img.right {
@@ -202,6 +206,10 @@ p {
 	color: #000;
 }
 
+.advantage h3 {
+	line-height: 21px;
+}
+
 .benefit p,
 .advantage p,
 .offer p {
@@ -213,7 +221,7 @@ p {
 	display: block;
 	position: relative;
 	line-height: 21px;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 }
 
 .benefit span::before,
@@ -232,12 +240,12 @@ p {
 
 .benefit span::before {
 	background: #fff;
-	left: 105px;
+	left: 113px;
 }
 
 .benefit span::after {
 	background: #fff;
-	right: 105px;
+	right: 113px;
 }
 
 .advantage span::before {
@@ -255,8 +263,8 @@ p {
 	float: left;
 	width: 400px;
 	padding: 0 55px;
-	padding-top: 156px;
-	padding-bottom: 80px;
+	padding-top: 160px;
+	padding-bottom: 85px;
 	text-align: center;
 	text-transform: uppercase;
 	box-sizing: border-box;
@@ -270,8 +278,8 @@ p {
 	height: 80px;
 	background-image: url(../img/sprite.png);
 	background-repeat: no-repeat;
-	top: 50px;
-	left: 160px;
+	top: 58px;
+	left: 162px;
 }
 
 .offer:first-child::before {
@@ -290,11 +298,12 @@ p {
 .advantage {
 	float: left;
 	width: 400px;
-	padding-top: 50px;
+	padding-top: 47px;
 	padding-bottom: 58px;
+	padding-left: 60px;
+	padding-right: 60px;
 	background: #eeeeee;
 	color: #000;
-	padding: 53px 60px;
 }
 						/*	ФОРМА ПОИСКА	*/
 
@@ -313,13 +322,13 @@ h2 {
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0;
-	margin-bottom: 22px;
+	margin-bottom: 24px;
 }
 
 p.search_text {
 	text-transform: uppercase;
 	text-align: center;
-	margin-bottom: 45px;
+	margin-bottom: 48px;
 }
 
 .search {
@@ -687,7 +696,7 @@ button[type="button"] {
 }
 
 .filter {
-	width: 240px;
+	width: 254px;
 	float: left;
 	position: relative;
 }
@@ -697,7 +706,7 @@ button[type="button"] {
 }
 
 .filter_name {
-	margin-bottom: 20px;
+	margin-bottom: 19px;
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
@@ -706,7 +715,7 @@ button[type="button"] {
 }
 
 .filter_price .filter_name {
-	margin-bottom: 15px;
+	margin-bottom: 13px;
 }
 
 input[type="checkbox"] {
@@ -740,7 +749,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .filter label {
 	display: block;
-	margin-bottom: 20px;
+	margin-bottom: 14px;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
@@ -750,7 +759,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .filter_price {
-	width: 320px;
+	width: 330px;
 	float: right;
 	margin-right: 70px;
 }
@@ -759,8 +768,9 @@ input[type="checkbox"]:checked:disabled + label::before {
 	border: 2px solid #fff;
 	border-radius: 2px;
 	font-size: 0;
-	padding: 5px 10px;
-	margin-bottom: 20px;
+	padding: 3px 10px;
+	margin-bottom: 18px;
+	margin-left: 10px;
 }
 .price_area label {
 	display: inline-block;
@@ -810,15 +820,18 @@ input[type="checkbox"]:checked:disabled + label::before {
 	display: block;
 	padding: 5px;
 	box-sizing: border-box;
+	outline: none;
+	cursor: pointer;
 	background-color: transparent;
 	border: 2px solid #fff;
 	border-radius: 2px;
-	width: 40%;
+	width: 43%;
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
 	font-family: "PT Sans", Arial, sans-serif;
 	margin: 0 auto;
+	margin-bottom: 35px;
 	color: #fff;
 	text-transform: uppercase;
 }
@@ -832,7 +845,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 						/*	БЕГУНОК	*/
 .price_range {
 	position: relative;
-	margin-bottom: 32px;
+	margin-bottom: 33px;
+	margin-left: 10px;
 }
 
 .line {
@@ -883,15 +897,15 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .toggle_max {
 	top: -10px;
-	left: 260px;
+	left: 250px;
 }
 
 						/*	СОРТИРОВКА	*/
 
 .hotels_sorting {
-	padding-top: 40px;
-	vertical-align: bottom;
-	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	vertical-align: top;
 }
 
 .hotels_numbers {
@@ -1002,7 +1016,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 					/*	СПИСОК НАЙДЕННЫХ ОТЕЛИ	*/
 
 .hotel_found {
-	padding-top: 30px;
+	padding-top: 28px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1015,10 +1029,14 @@ input[type="checkbox"]:checked:disabled + label::before {
 	float: left;
 	margin-left: 70px;
 	margin-right: 30px;
+	width: auto;
+	max-width: 135px;
+	min-height: 88px;
+	height: 100%;
 }
 
 .info {
-	min-width: 750px;
+	max-width: 750px;
 	float: left;
 	font-size: 14px;
 	line-height: 21px;
@@ -1075,7 +1093,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .more_btn {
 	width: 110px;
 	background: #81b3d2;
-	margin-right: 6px;
+	margin-right: 8px;
 }
 
 .more_btn:hover {
@@ -1108,7 +1126,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 
 .stars {
-	margin-bottom: 34px;
+	margin-bottom: 36px;
 }
 
 .star {
