@@ -3,12 +3,13 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	min-width: 1200px;
 
 	background: #f2f2f2;
 }
 
 body {
+	min-width: 1200px;
+
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
@@ -393,6 +394,7 @@ p.search_text {
 }
 
 .search_form {
+	display: none;
 	position: absolute;
 	width: 100%;
 	padding: 55px;
@@ -406,6 +408,52 @@ p.search_text {
 
 	box-sizing: border-box;
 }
+	/*		АНИМАЦИЯ ПОЯВЛЕНИЯ ФОРМЫ	*/
+
+@keyframes drop {
+	0% { 
+		transform: translateY(-395px);
+		opacity: 0; 
+	}
+	20% { 
+		transform: translateY(-310px);
+		opacity: 0.1;	 
+	}
+	40% { 
+		transform: translateY(-200px);
+		opacity: 0.4;
+	}
+	60% { 
+		transform: translateY(-150px);
+		opacity:0.7;  
+	}
+	80% { 
+		transform: translateY(-50px);
+		opacity:
+	 }
+	100% { 
+		transform: translateY(0); 
+	}
+}			
+
+.search_form_show {
+	display: block;
+	animation: drop 0.5s;
+}
+
+		/*	АНИМАЦИЯ ОШИБКИ	*/
+
+@keyframes squeeze {
+	0% { transform: scale(0.9); }
+	25% { transform: scale(0.7); }
+	50%	{ transform: scale(0.5); }
+	100% { transform: scale(1); }
+}
+
+.search_form_error {
+	animation: squeeze 0.4s;
+}
+
 
 .date_picker {
 	margin-bottom: 30px;
