@@ -407,51 +407,47 @@ p.search_text {
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 
 	box-sizing: border-box;
+
+	opacity: 0;
 }
+
 	/*		АНИМАЦИЯ ПОЯВЛЕНИЯ ФОРМЫ	*/
 
 @keyframes drop {
 	0% { 
-		transform: translateY(-395px);
+		transform: translateY(-400px);
 		opacity: 0; 
 	}
-	20% { 
-		transform: translateY(-310px);
-		opacity: 0.1;	 
-	}
-	40% { 
-		transform: translateY(-200px);
-		opacity: 0.4;
-	}
-	60% { 
-		transform: translateY(-150px);
-		opacity:0.7;  
-	}
-	80% { 
-		transform: translateY(-50px);
-		opacity:
-	 }
 	100% { 
 		transform: translateY(0); 
+		opacity: 1;
 	}
 }			
 
 .search_form_show {
 	display: block;
-	animation: drop 0.5s;
+	animation-name: drop;
+	animation-duration: 0.6s;
+	animation-delay: 0.001s;
+	animation-fill-mode: forwards;
 }
 
 		/*	АНИМАЦИЯ ОШИБКИ	*/
 
 @keyframes squeeze {
-	0% { transform: scale(0.9); }
-	25% { transform: scale(0.7); }
-	50%	{ transform: scale(0.5); }
+	0% { transform: scale(0.8); }
+	25% { transform: scale(0.6); }
+	50%	{ transform: scale(0.4); }
+	75% { transform: scale(1.05); }
 	100% { transform: scale(1); }
 }
 
 .search_form_error {
-	animation: squeeze 0.4s;
+	animation-name: squeeze;
+	animation-duration: 0.4s;
+	animation-delay: 0.001s;
+	animation-fill-mode: forwards;
+	opacity: 1;
 }
 
 
@@ -660,6 +656,8 @@ button[type="button"] {
 	line-height: 26px;
 	font-weight: 700;
 	text-transform: uppercase;
+	font-family: "PT Sans", Arial, sans-serif;
+
 
 	background: #81b3d2;
 	color: #fff;
