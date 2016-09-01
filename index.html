@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Sedona</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -103,14 +103,14 @@
 							<div class="date_picker">
 								<label for="arrival">Дата заезда:</label>
 								<div class="field_date">
-									<input type="text" id="arrival" class="date_input" value="24 апреля 2016">
+									<input type="text" id="arrival" class="date_input" value="24 апреля 2016" required>
 									<button type="button" class="calendar_btn">Кнопка-календарь</button>
 								</div>
 							</div>
 							<div class="date_picker">
 								<label for="departure">Дата выезда:</label>
 								<div class="field_date">
-									<input type="text" id="departure" class="date_input" value="4 июля 2016">
+									<input type="text" id="departure" class="date_input" value="4 июля 2016" required>
 									<button type="button" class="calendar_btn">Кнопка-календарь</button>
 								</div>
 							</div>
@@ -119,7 +119,7 @@
 									<label for="adults">Взрослые:</label>
 									<div class="count_field">
 										<button type="button" value="-" class="btn btn_reduce">-</button>
-										<input type="text" id="adults" value="2" class="count_input">
+										<input type="text" id="adults" value="2" class="count_input" required>
 										<button type="button" value="+" class="btn btn_add">+</button>
 									</div>	
 								</div>
@@ -127,7 +127,7 @@
 									<label for="children">Дети:</label>
 									<div class="count_field">
 										<button type="button" value="-" class="btn btn_reduce">-</button>
-										<input type="text" id="children" value="0" class="count_input">
+										<input type="text" id="children" value="0" class="count_input" required>
 										<button type="button" value="+" class="btn btn_add">+</button>
 									</div>
 								</div>
@@ -158,6 +158,6 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/popup.js"></script>
+	<script src="js/popup.min.js"></script>
 </body>
 </html>
