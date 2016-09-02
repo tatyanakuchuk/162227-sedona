@@ -20,10 +20,10 @@ search.addEventListener("click", function(event){
 	}
 });
 	
-	date_arrival.removeAttribute("required");
-	date_departure.removeAttribute("required");
-	count_adult.removeAttribute("required");
-	count_child.removeAttribute("required");
+date_arrival.removeAttribute("required");
+date_departure.removeAttribute("required");
+count_adult.removeAttribute("required");
+count_child.removeAttribute("required");
 
 form.addEventListener("submit", function(event){
 	

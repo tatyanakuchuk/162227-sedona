@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="css/normalize.css" rel="stylesheet">
 	<title>Sedona</title>
+	<link href="css/normalize.min.css" rel="stylesheet">
 	<link href="css/style.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<div class="wrapper">
-												<!-- HEADER -->
+		<!--HEADER-->
 		<header class="main_header">
 			<a class="logo_link" href="index.html">
 				<img src="img/logo.png" alt="Sedona" class="logo_pic" width="140" height="70">
@@ -32,7 +32,7 @@
 			</nav>
 		</header>
 		<main class="content">
-												<!-- ФИЛЬТРЫ  -->
+			<!--ФИЛЬТРЫ-->
 			<section class="filters clearfix">
 				<form action="/echo" method="post">
 					<div class="filter">
@@ -71,7 +71,7 @@
 								<input type="text" id="price_max" value="3000">
 							</div>
 						</div>
-														<!-- 	БЕГУНОК		-->
+						<!--БЕГУНОК-->
 						<div class="price_range">
 							<div class="line">
 								<div class="line_filled"></div>
@@ -84,7 +84,7 @@
 				</form>
 			</section>										
 			<section class="hotels_found">
-														<!-- СОРТИРОВКА -->
+				<!--СОРТИРОВКА-->
 				<div class="hotels_sorting clearfix">
 					<p class="hotels_numbers">Найдено: <span>3</span></p>
 					<div class="sorting_list">
@@ -100,12 +100,14 @@
 						<a href="#" class="sorting_down active">По убыванию</a> 
 					</div>
 				</div>
-													<!-- СПИСОК НАЙДЕННЫХ ОТЕЛИ -->			
+				<!--СПИСОК НАЙДЕННЫХ ОТЕЛЕЙ-->			
 				<div class="hotels_found_list">
 					<div class="hotel_found clearfix">
 						<img src="img/amara.jpg" alt="Amara" class="hotel_img" width="135" height="90">
 						<div class="info">
-							<a href="#" class="name_hotel">Amara resort & spa</a>
+							<h3>
+								<a href="#" class="name_hotel">Amara resort & spa</a>
+							</h3>
 							<div class="info_text clearfix">
 								<p class="type">Гостиница</p>
 								<p class="price_hotel">От 3500 р.</p>
@@ -128,7 +130,9 @@
 					<div class="hotel_found clearfix">
 						<img src="img/desert.jpg" alt="Desert" class="hotel_img" width="135" height="90">
 						<div class="info">
-							<a href="#" class="name_hotel">Desert quail inn</a>
+							<h3>
+								<a href="#" class="name_hotel">Desert quail inn</a>
+							</h3>
 							<div class="info_text clearfix">
 								<p class="type">Мотель</p>
 								<p class="price_hotel">От 2000 р.</p>
@@ -149,7 +153,9 @@
 					<div class="hotel_found clearfix">
 						<img src="img/villas.jpg" alt="Villas" class="hotel_img" width="135" height="90">
 						<div class="info">
-							<a href="#" class="name_hotel">Villas at poco diablo</a>
+							<h3>
+								<a href="#" class="name_hotel">Villas at poco diablo</a>
+							</h3>	
 							<div class="info_text clearfix">
 								<p class="type">Апартаменты</p>
 								<p class="price_hotel">От 4000 р.</p>
@@ -171,7 +177,7 @@
 				</div>
 			</section>
 		</main>
-											<!-- FOOTER -->
+		<!--FOOTER-->
 		<footer class="clearfix">
 				<div class="footer_visitsedona">
 					<a class="visitsedona" href="#">#VISITSEDONA</a>

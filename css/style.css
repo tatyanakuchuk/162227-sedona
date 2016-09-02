@@ -1,4 +1,4 @@
-					/*		ОБЩИЕ		*/
+/*ОБЩИЕ*/
 html,
 body {
 	margin: 0;
@@ -13,6 +13,7 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
+	text-transform: uppercase;
 	font-family: "PT Sans", Arial, sans-serif;
 
 	color: #000;
@@ -25,10 +26,6 @@ h2 {
 }
 
 h3 {
-	max-width: 160px;
-	margin: 0 auto;
-	margin-bottom: 20px;
-
 	font-size: 21px;
 	line-height: 24px;
 	font-weight: 700;
@@ -45,7 +42,7 @@ p {
 	margin: 0;
 }
 
-					/*     СЕТКА     */
+/*СЕТКА*/
 
 .wrapper {
 	position: relative;
@@ -77,14 +74,15 @@ p {
 }
 
 .main_navigation a {
-	text-transform: uppercase;
 	font-weight: 700;
 
 	color: #000;
 
 	text-decoration: none;
 }
-				/*	СОСТОЯНИЯ ПУНКТОВ ГЛАВНОГО МЕНЮ	*/
+
+/*СОСТОЯНИЯ ПУНКТОВ ГЛАВНОГО МЕНЮ*/
+
 .main_navigation a:hover {
 	color: #81b3d2;
 }
@@ -125,7 +123,7 @@ p {
 	text-align: right;
 }
 
-						/*	ВСТУПЛЕНИЕ	*/
+/*ВСТУПЛЕНИЕ*/
 
 .intro {
 	height: 432px;
@@ -141,6 +139,14 @@ p {
 	margin: 0 auto;
 }
 
+/*ПРЕИМУЩЕСТВА*/
+
+.benefits h3 {
+	max-width: 160px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
 .container {
 	width: 500px;
 	margin: 0 auto;
@@ -153,7 +159,6 @@ p {
 
 	font-size: 21px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	color: #000;
 
@@ -161,7 +166,6 @@ p {
 }
 
 .sedona_cool {
-	text-transform: uppercase;
 	text-align: center;
 } 
 
@@ -177,7 +181,6 @@ p {
 
 	color: #fff;
 
-	text-transform: uppercase;
 	text-align: center;
 
 	box-sizing: border-box;
@@ -291,7 +294,6 @@ p {
 	padding-top: 160px;
 	padding-bottom: 85px;
 
-	text-transform: uppercase;
 	text-align: center;
 	
 	box-sizing: border-box;
@@ -324,6 +326,10 @@ p {
 	background-position: -235px 0;
 }
 
+.advantages{
+	background: #eeeeee;
+}
+
 .advantage {
 	float: left;
 	width: 400px;
@@ -332,11 +338,10 @@ p {
 	padding-left: 60px;
 	padding-right: 60px;
 
-	background: #eeeeee;
-
 	color: #000;
 }
-						/*	ФОРМА ПОИСКА	*/
+
+/*ФОРМА ПОИСКА*/
 
 .search_hotel {
 	position: relative;
@@ -354,14 +359,12 @@ h2 {
 	margin: 0;
 	margin-bottom: 24px;
 
-	text-transform: uppercase;
 	text-align: center;
 }
 
-p.search_text {
+.search_text {
 	margin-bottom: 48px;
 
-	text-transform: uppercase;
 	text-align: center;
 }
 
@@ -402,7 +405,7 @@ p.search_text {
 	color: #000;
 	background: #fff;
 
-	text-transform: uppercase;
+	
 
 	box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 
@@ -411,7 +414,7 @@ p.search_text {
 	opacity: 0;
 }
 
-	/*		АНИМАЦИЯ ПОЯВЛЕНИЯ ФОРМЫ	*/
+/*АНИМАЦИЯ ПОЯВЛЕНИЯ ФОРМЫ*/
 
 @keyframes drop {
 	0% { 
@@ -432,7 +435,7 @@ p.search_text {
 	animation-fill-mode: forwards;
 }
 
-		/*	АНИМАЦИЯ ОШИБКИ	*/
+/*АНИМАЦИЯ ОШИБКИ*/
 
 @keyframes squeeze {
 	0% { transform: scale(0.8); }
@@ -450,7 +453,6 @@ p.search_text {
 	opacity: 1;
 }
 
-
 .date_picker {
 	margin-bottom: 30px;
 	font-size: 0;
@@ -458,14 +460,13 @@ p.search_text {
 
 label {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	width: 25%;
 	padding: 6px 0;
 
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 .field_date {
@@ -547,7 +548,9 @@ button[type="button"] {
 
 .count {
 	display: inline-block;
+	vertical-align: bottom;
 	width: 50%;
+
 	font-size: 0;
 }
 
@@ -562,7 +565,7 @@ button[type="button"] {
 
 .count_field {
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	position: relative;
 	width: 50%;
 
@@ -620,7 +623,7 @@ button[type="button"] {
 	outline: none;
 
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: bottom;
 	width: 114px;
 	height: 38px;
 	padding: 6px 38px;
@@ -682,7 +685,8 @@ button[type="button"] {
 	background-repeat: no-repeat;
 }
 
-						/*	ФУТЕР	*/
+/*ФУТЕР*/
+
 .main_footer {
 	position: absolute;
 	bottom: 0;
@@ -700,7 +704,7 @@ button[type="button"] {
 }
 
 .footer_visitsedona {
-	padding-top: 40px;
+	padding-top: 46px;
 	padding-bottom: 44px;
 }
 
@@ -715,7 +719,7 @@ button[type="button"] {
 }
 
 .footer_social {
-	padding-top: 30px;
+	padding-top: 36px;
 	padding-bottom: 36px;
 
 	font-size: 0;
@@ -778,7 +782,7 @@ button[type="button"] {
 }
 
 .footer_copyright {
-	padding-top: 34px;
+	padding-top: 40px;
 	padding-bottom: 40px;
 
 	font-size: 0;
@@ -791,7 +795,6 @@ button[type="button"] {
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 .img_link {
@@ -813,8 +816,7 @@ button[type="button"] {
 	background-position: 0 -200px;
 }
 
-
-				/*  INNER PAGE*/
+/* INNER PAGE*/
 
 .filters {
 	padding-top: 25px;
@@ -837,7 +839,6 @@ button[type="button"] {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	color: #fff;
 }
@@ -885,7 +886,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: 400;
-	text-transform: uppercase;
 
 	color: #fff;
 }
@@ -989,8 +989,8 @@ input[type="checkbox"]:checked:disabled + label::before {
 	color: #000;
 }
 
+/*БЕГУНОК*/
 
-						/*	БЕГУНОК	*/
 .price_range {
 	position: relative;
 	margin-bottom: 33px;
@@ -1053,7 +1053,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 	left: 250px;
 }
 
-						/*	СОРТИРОВКА	*/
+/*СОРТИРОВКА*/
 
 .hotels_sorting {
 	padding-top: 30px;
@@ -1070,7 +1070,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 .sorting_list {
@@ -1086,7 +1085,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 	font-size: 12px;
 	line-height: 26px;
-	text-transform: uppercase;
 }
 
 .sorting_list ul {
@@ -1102,7 +1100,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 	font-size: 12px;
 	line-height: 26px;
-	text-transform: uppercase;
 }
 
 .sorting_list a {
@@ -1173,13 +1170,16 @@ input[type="checkbox"]:checked:disabled + label::before {
 	background-position: -40px -290px;
 }
 
-
-					/*	СПИСОК НАЙДЕННЫХ ОТЕЛИ	*/
+/*	СПИСОК НАЙДЕННЫХ ОТЕЛИ*/
 
 .hotel_found {
 	padding-top: 23px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel_found h3 {
+	margin: 0;
 }
 
 .hotel_found:first-child {
@@ -1200,10 +1200,9 @@ input[type="checkbox"]:checked:disabled + label::before {
 	
 	font-size: 14px;
 	line-height: 21px;
-	text-transform: uppercase;
 }
 
-.name_hotel {
+.name_hotel{
 	display: block;
 	margin: 0;
 	margin-bottom: 7px;
@@ -1211,7 +1210,6 @@ input[type="checkbox"]:checked:disabled + label::before {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: 700;
-	text-transform: uppercase;
 
 	color: #000;
 
@@ -1281,6 +1279,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 .reservation_btn:hover {
 	background: #604e43;
 }
+
 .reservation_btn:active {
 	color: rgba(255, 255, 255, 0.3);
 	background: #503e33;
@@ -1301,6 +1300,7 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .star {
 	display: inline-block;
+	vertical-align: bottom;
 	width: 18px;
 	height: 18px;
 	margin-left: 6px;
@@ -1312,11 +1312,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 
 .rating {
 	display: inline-block;
+	vertical-align: bottom;
 	padding: 3px 10px;
 
 	font-size: 14px;
 	line-height: 21px;
-	text-transform: uppercase;
 
 	background-color: #f2f2f2;
 	color: #666666;
@@ -1325,9 +1325,11 @@ input[type="checkbox"]:checked:disabled + label::before {
 }
 .rating span {
 	display: inline-block;
+	vertical-align: bottom;
 }
 
-					/*		ПСЕВДО-РАСПОРКА		*/
+/*ПСЕВДО-РАСПОРКА*/
+
 .clearfix::after {
 	content: "";
 	display: table;
